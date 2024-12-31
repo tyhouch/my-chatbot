@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
     // Call the OpenAI chat completion endpoint with full conversation
     const response = await openai.chat.completions.create({
-      model: model || "gpt-4o",
+      model: model || "gpt-4",
       messages: conversation,
     });
 
